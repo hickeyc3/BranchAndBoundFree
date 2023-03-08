@@ -35,6 +35,7 @@ OptimalSolution* branch_and_bound(Tableau* root_tab){
       curr->weight=curr->problem->get_sol()->eval;
       best_sols.insert(curr);
     }
+
     //If there are potentially still candidate solutions down this path
     if (curr->problem->get_feasibility() && branch_var != -1){
 

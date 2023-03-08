@@ -19,7 +19,7 @@ class PriorityQueue{
     Node* front();                // pointer to front, highest priority, node
     void dequeue();               // remove highest priority node
     bool is_empty();              // returns if there are non-sentinel nodes
-    void print();                 // print out queue in priority order 
+    void print();                 // print out queue in priority order
 };
 
 #endif

@@ -29,7 +29,9 @@ void PriorityQueue::insert(Node* n){
 
   while (curr->next!=&front_sentinel){
 
-    if (n->weight > curr->weight){
+
+
+    if (n->weight < curr->next->weight){
 
       n->next=curr->next;
       curr->next=n;
